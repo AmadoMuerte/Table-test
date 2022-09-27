@@ -1,17 +1,38 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import App from './App/App';
+
+let data = [
+    {
+        date: '08.04.2021',
+        name: 'опачки',
+        amount: '200',
+        distance: '150m',
+    },
+    {
+        date: '05.03.2019',
+        name: 'было дело',
+        amount: '500',
+        distance: '200m',
+    },
+    {
+        date: '02.07.2015',
+        name: 'слон',
+        amount: '60',
+        distance: '500m',
+    },
+    {
+        date: '01.09.2025',
+        name: 'золото',
+        amount: '700',
+        distance: '1km',
+    }
+];
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <App data={data}/>
   </React.StrictMode>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
