@@ -1,0 +1,15 @@
+.menu {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 0 10px;
+    width: 280px;
+    height: 220px;
+    background-color: rgba(218, 213, 213, 0.46);
+    position: absolute;
+    right: -92px;
+    border-radius: 10px;
+    top: 40px;
+
+}

@@ -3,12 +3,12 @@
     color: #f6f6f6;
     border-collapse: collapse;
     background-color: rgba(111, 182, 182, 0.58);
-    border-radius: 10px;
 }
 
 td {
     padding: 5px 20px;
     border-bottom: 1px solid #867c7c;
+
 }
 
 th {

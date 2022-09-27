@@ -1,7 +1,6 @@
 import styles from './Table.module.css';
 import Navigation from "../Navigation/Navigation";
 import TableString from "../TableString/TableString";
-import {tab} from "@testing-library/user-event/dist/tab";
 
 function Table(props) {
 

@@ -5,7 +5,7 @@ import App from './App/App';
 
 let data = [
     {
-        date: '08.04.2021',
+        date: '2.04.2021',
         name: 'опачки',
         amount: '200',
         distance: '150m',

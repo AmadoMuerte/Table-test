@@ -7,7 +7,7 @@ function TableString(props) {
     return (
         <tr className={'string'}>
             <td>
-                {item.data}
+                {item.date}
             </td>
             <td>
                 {item.name}

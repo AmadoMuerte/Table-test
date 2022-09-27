@@ -1,0 +1,9 @@
+.btnSection {
+    width: 100px;
+    padding: 5px;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    margin: 5px 0;
+    border-radius: 10px;
+}

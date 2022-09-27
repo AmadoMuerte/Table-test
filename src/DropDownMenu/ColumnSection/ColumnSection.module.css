@@ -1,0 +1,30 @@
+
+.list {
+    align-items: center;
+    list-style-type: none;
+
+}
+
+.listItem {
+    list-style-type: none;
+    background-color: rgba(111, 182, 182, 0.58);
+    color: white;
+    padding: 3px 4px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 0px;
+    left: -4px;
+    z-index: 2;
+
+}
+
+.selected_column {
+    width: 120px;
+    line-height: 0;
+    text-align: center;
+}
