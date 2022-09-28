@@ -4,12 +4,17 @@
     justify-content: space-around;
     align-items: flex-start;
     padding: 0 10px;
-    width: 280px;
     height: 220px;
-    background-color: rgba(218, 213, 213, 0.46);
-    position: absolute;
-    right: -92px;
     border-radius: 10px;
-    top: 40px;
+    margin-right: -10px;
+}
 
+.menu input {
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    padding: 3px 4px;
+    height: 36px;
+    background-color: #eeeeee;
+    color: #595959;
 }

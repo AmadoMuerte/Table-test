@@ -12,6 +12,7 @@ function ColumnSection(props) {
                return <SectionBtn
                    setSelectedColumn={columnSection.setSelectedColumn}
                    name={item}
+                   key={item + '' + columnSection.length+1}
                />
             })
         }

@@ -1,8 +1,7 @@
 
 .list {
-    align-items: center;
-    list-style-type: none;
-
+    margin-top: -18px;
+    margin-right: 10px;
 }
 
 .listItem {
@@ -17,14 +16,12 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    top: 0px;
-    left: -4px;
-    z-index: 2;
 
 }
 
 .selected_column {
-    width: 120px;
+
+    width: 110px;
     line-height: 0;
     text-align: center;
 }

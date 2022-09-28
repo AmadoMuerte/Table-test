@@ -7,13 +7,17 @@ function Table(props) {
     let {data} = props;
 
     let table_strings = data.map((item) => {
-       return <TableString item={item}/>
+       return <TableString item={item} key={item.amount + '' + data.length+1}/>
     });
 
     return (
         <table className={styles.table}>
-            <Navigation />
-            {table_strings}
+            <thead>
+                <Navigation />
+            </thead>
+            <tbody>
+                {table_strings}
+            </tbody>
         </table>
     );
 }

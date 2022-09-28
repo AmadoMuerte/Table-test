@@ -1,12 +1,11 @@
 import React from 'react';
 import './DropDownMenu.css';
-
 import ColumnSection from "./ColumnSection/ColumnSection";
-
 
 function DropDownMenu(props) {
 
-    let {columnSection, termsState} = props
+    let {columnSection, termsState,
+        value, setValue, sortingData} = props
 
     //фильтры для сортировки
     let sortElements = ['название', 'количество', 'расстояние'];
@@ -20,6 +19,12 @@ function DropDownMenu(props) {
         setSelectedColumn: termsState.setSelectedTerm
     };
 
+    let valueChange = (e) => {
+        setValue(e.target.value);
+        sortingData(e.target.value);
+
+    }
+
     return (
         <div className={'menu'}>
             <ColumnSection
@@ -29,6 +34,12 @@ function DropDownMenu(props) {
             <ColumnSection
                 columnSection={stateTerms}
                 sortElements={sortTermElem}
+            />
+            <input
+                type="text"
+                placeholder={'Введите значение'}
+                value={value}
+                onChange={valueChange}
             />
         </div>
     );

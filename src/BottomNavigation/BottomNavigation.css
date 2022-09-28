@@ -1,23 +1,37 @@
-.btnDropDown {
-    margin-top: 15px;
-    padding: 5px 10px;
-    font-size: 17px;
-    border: none;
-    border-radius: 10px;
-    background-color: #cfe8e3;
-    transition: .2s;
-}
-.btnDropDown:hover {
-    box-shadow: 2px 2px 2px #c9c9c9;
-    background-color: #a3e7d5;
-    color: white;
-}
 
 .bottomNav {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 .bottomNav_menu {
     position: relative;
+}
+
+.pagination {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 220px;
+    margin-top: 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    padding: 0px 4px;
+    height: 42px;
+}
+
+.pagination__item {
+    cursor: pointer;
+   border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px 5px;
+    background-color: #eeeeee;
+    color: #595959;
+    transition: 0.2s;
+}
+
+.pagination__item:hover {
+    background-color: #e0dbdb;
 }
