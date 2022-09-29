@@ -1,0 +1,173 @@
+let data = [
+
+    {
+        date: '01.09.2025',
+        name: 'хлеб',
+        amount: 7000,
+        distance: 152,
+    },
+    {
+        date: '01.09.2025',
+        name: 'яблоки',
+        amount: 5214,
+        distance: 200,
+    },
+    {
+        date: '04.04.2019',
+        name: 'молоко',
+        amount: 400,
+        distance: 140,
+    },
+    {
+        date: '03.06.2015',
+        name: 'сливы',
+        amount: 2040,
+        distance: 900,
+    },
+    {
+        date: '01.05.2022',
+        name: 'сыр',
+        amount: 2931,
+        distance: 5000,
+    },
+    {
+        date: '01.09.2025',
+        name: 'хлеб',
+        amount: 7000,
+        distance: 152,
+    },
+    {
+        date: '01.05.2022',
+        name: 'сыр',
+        amount: 2931,
+        distance: 5000,
+    },
+    {
+        date: '01.09.2025',
+        name: 'хлеб',
+        amount: 7000,
+        distance: 152,
+    },
+    {
+        date: '01.09.2025',
+        name: 'яблоки',
+        amount: 5214,
+        distance: 200,
+    },
+    {
+        date: '04.04.2019',
+        name: 'молоко',
+        amount: 400,
+        distance: 140,
+    },
+    {
+        date: '03.06.2015',
+        name: 'сливы',
+        amount: 2040,
+        distance: 900,
+    },
+    {
+        date: '01.05.2022',
+        name: 'сыр',
+        amount: 2931,
+        distance: 5000,
+    },
+    {
+        date: '01.05.2022',
+        name: 'сыр',
+        amount: 2931,
+        distance: 5000,
+    },
+    {
+        date: '01.09.2025',
+        name: 'хлеб',
+        amount: 7000,
+        distance: 152,
+    },
+    {
+        date: '01.09.2025',
+        name: 'яблоки',
+        amount: 5214,
+        distance: 200,
+    },
+    {
+        date: '04.04.2019',
+        name: 'молоко',
+        amount: 400,
+        distance: 140,
+    },
+    {
+        date: '03.06.2015',
+        name: 'сливы',
+        amount: 2040,
+        distance: 900,
+    },
+    {
+        date: '01.05.2022',
+        name: 'сыр',
+        amount: 2931,
+        distance: 5000,
+    },
+    {
+        date: '01.09.2025',
+        name: 'яблоки',
+        amount: 5214,
+        distance: 200,
+    },
+    {
+        date: '04.04.2019',
+        name: 'молоко',
+        amount: 400,
+        distance: 140,
+    },
+    {
+        date: '03.06.2015',
+        name: 'сливы',
+        amount: 2040,
+        distance: 900,
+    },
+    {
+        date: '01.05.2022',
+        name: 'сыр',
+        amount: 2931,
+        distance: 5000,
+    },
+    {
+        date: '01.05.2022',
+        name: 'сыр',
+        amount: 2931,
+        distance: 5000,
+    },
+    {
+        date: '01.09.2025',
+        name: 'хлеб',
+        amount: 7000,
+        distance: 152,
+    },
+    {
+        date: '01.09.2025',
+        name: 'яблоки',
+        amount: 5214,
+        distance: 200,
+    },
+    {
+        date: '04.04.2019',
+        name: 'молоко',
+        amount: 400,
+        distance: 140,
+    },
+    {
+        date: '03.06.2015',
+        name: 'сливы',
+        amount: 2040,
+        distance: 900,
+    },
+    {
+        date: '01.05.2022',
+        name: 'сыр',
+        amount: 2931,
+        distance: 5000,
+    },
+];
+
+export default data;

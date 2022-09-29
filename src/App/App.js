@@ -8,6 +8,19 @@ function App({data}) {
 
     const [stateData, setStateData] = useState(data);
 
+    //состояние пагинации
+    const [currentPage, setCurrentPage] = useState(1);
+    const [tableStringPerPage] = useState(6);
+
+    const lastTableStringIndex = currentPage * tableStringPerPage
+    const firstTableStringIndex = lastTableStringIndex - tableStringPerPage
+
+    const currentTableString = () => {
+        return stateData.slice(firstTableStringIndex, lastTableStringIndex)
+    }
+
+    const paginate = pageNumber => setCurrentPage(pageNumber);
+
     //состояние для выбора колонок
     const [showList, setShowList] = useState(false);
     const [selectedColumn, setSelectedColumn] = useState('название');
@@ -25,15 +38,15 @@ function App({data}) {
     let sortMore = (value, column) => {
         let newData;
         if (column === 'название') {
-            return newData = data.filter((item) => {
+            return newData = stateData.filter((item) => {
                 return item.name.length > value.length;
             })
         } else if (column === 'количество') {
-            return newData = data.filter((item) => {
+            return newData = stateData.filter((item) => {
                 return item.amount > value;
             })
         } else if (column === 'расстояние') {
-            return newData = data.filter((item) => {
+            return newData = stateData.filter((item) => {
                 item.distance += '';
                 return item.distance > value;
             })
@@ -45,15 +58,15 @@ function App({data}) {
     let sortLess = (value, column) => {
         let newData;
         if (column === 'название') {
-            return newData = data.filter((item) => {
+            return newData = stateData.filter((item) => {
                 return item.name.length < value.length;
             })
         } else if (column === 'количество') {
-            return newData = data.filter((item) => {
+            return newData = stateData.filter((item) => {
                 return item.amount < value;
             })
         } else if (column === 'расстояние') {
-            return newData = data.filter((item) => {
+            return newData = stateData.filter((item) => {
                 item.distance += '';
                 return item.distance < value;
             })
@@ -65,16 +78,16 @@ function App({data}) {
     let sortEqually = (value, column) => {
         let newData;
         if (column === 'название') {
-            return newData = data.filter((item) => {
+            return newData = stateData.filter((item) => {
                 return item.name === value;
             })
         } else if (column === 'количество') {
-            return newData = data.filter((item) => {
+            return newData = stateData.filter((item) => {
                 item.amount += '';
                 return item.amount === value;
             })
         } else if (column === 'расстояние') {
-            return newData = data.filter((item) => {
+            return newData = stateData.filter((item) => {
                 item.distance += '';
                 return item.distance === value;
             })
@@ -117,7 +130,6 @@ function App({data}) {
         return newData;
     }
 
-
     let sortingData = (value) => {
         if (value === '') {
             setStateData(data);
@@ -134,16 +146,19 @@ function App({data}) {
         }
     }
 
-
     return (
         <>
-            <Table data={stateData}/>
+            <Table data={currentTableString()}/>
             <BottomNavigation
                 columnState={columnState}
                 termsState={termsState}
                 value={value}
                 setValue={setValue}
                 sortingData={sortingData}
+                tableStringPerPage={tableStringPerPage}
+                totalTableString={stateData.length}
+                paginate={paginate}
+                currentPage={currentPage}
             />
         </>
     )

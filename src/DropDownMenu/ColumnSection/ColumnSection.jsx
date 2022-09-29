@@ -6,17 +6,18 @@ function ColumnSection(props) {
 
     let {sortElements, columnSection} = props;
 
-    let functionShowList = () => {
+
+    let list;
+
         if (columnSection.showList) {
-            return sortElements.map((item) => {
-               return <SectionBtn
-                   setSelectedColumn={columnSection.setSelectedColumn}
-                   name={item}
-                   key={item + '' + columnSection.length+1}
-               />
+            list = sortElements.map((item) => {
+                return <SectionBtn
+                    setSelectedColumn={columnSection.setSelectedColumn}
+                    name={item}
+                    key={item + '' + columnSection.length+1}
+                />
             })
         }
-    }
 
     return (
         <div className={classes.list}>
@@ -28,7 +29,7 @@ function ColumnSection(props) {
                 <p className={classes.selected_column}>
                     {columnSection.selectedColumn}
                 </p>
-                {functionShowList()}
+                {list}
             </ul>
         </div>
     );
